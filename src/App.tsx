@@ -5,7 +5,7 @@ import BoxArea97 from "@/components/BoxArea97";
 import TagList from "./components/TagList";
 
 export default function App() {
-  const [tags, setTags] = useState([
+  const [tags] = useState([
     "NFT",
     "Metaverse",
     "Sustainable",

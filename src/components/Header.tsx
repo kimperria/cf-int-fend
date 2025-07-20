@@ -6,23 +6,19 @@ export default function Header() {
   return (
     <header className="flex items-center justify-between px-6 py-4 bg-black border-b border-gray-800">
       <div className="flex items-center gap-2">
-        <img src="/task1/logo.png" alt="Logo" className="w-10 h-10" />
-        <div className="text-white font-semibold text-lg">Wortionary</div>
+        <img src="/task1/logo.png" alt="Logo" className="w-6 h-6" />
+        <div className="text-white font-semibold text-lg">Worctionary</div>
       </div>
 
       <div className="flex items-center gap-4">
-        <div style={{ position: "relative" }}>
-          <span>
-            <span>
-              <span className="absolute left-3 top-2.5">
-                <Search className="text-gray-400 text-sm" />
-              </span>
-            </span>
+        <div style={{ position: "relative" }} className="h-10 w-40 ">
+          <span className="absolute left-3 inset-y-0  flex items-center">
+            <Search className="text-gray-400" />
           </span>
           <Input
             type="text"
-            value="search"
-            className="pl-9 bg-gray-800 text-white border-none focus:ring-0 rounded-full"
+            placeholder="Search"
+            className="pl-11 bg-gray-800 text-white border-none focus:ring-0 rounded-xl"
           />
         </div>
         <Avatar style={{ width: "32px", height: "32px" }}>
